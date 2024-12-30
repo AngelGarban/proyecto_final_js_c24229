@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    font-family: "Montserrat", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+/*BODY*/
+body{
+  background-color: rgb(246, 242, 236);
+}
+
+p{
+    font-size: 1.2rem;
+}
+.h1Index{    
+     color: #fff;
+     font-size: 3.2rem;
+     text-align: center;
+ }
+ h2{
+     padding-top:25px;
+     color: #000000;
+     font-size: 2rem;
+     text-align: center;
+ }
+ h3{
+    padding-top:25px;    
+    font-size: 1.5rem;
+    text-align: center;
+ }
+ h5{
+    color: #fff;
+ }
+ 
+
+/*HEADER*/
+.header{
+    background-color: rgb(0, 0, 0);
+    font-size: 10px;    
+    top:0;
+    z-index:1005;
+    height:15vh;
+    padding:10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    .logo{
+        width: 200px;
+    }
+    nav{
+      
+        ul{
+            list-style: none;
+            li{
+                display: inline-block;
+                margin-right: 15px;
+                a{
+                    text-decoration: none;
+                    color:  #ffffff;
+                    font-size: 1.8em;
+                  
+                }
+            }
+           
+        }
+    }
+}
+
+#hero{    
+    height: 100vh;
+    position: relative;
+}
+
+.videoIndex{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay; */
+}
+
+/*Estilos seccion principal del index*/
+.principalIndex{
+    padding-top: 50px;
+    padding-bottom: 50px;    
+    /* background-size: cover;*/
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    .contenedorTextoPrincipalIndex{
+        z-index: 2;
+        margin:0 auto;
+        margin-top: 80px;       
+        padding:10px;        
+        text-align:center;
+        
+        width: 80%;
+        font-size: 10px;
+        color: rgb(255, 255, 255);               
+        
+        p{
+            font-size: 2.5em;
+        }
+        a{
+            display:inline-block;
+            margin-top:20px;
+            text-decoration: none;
+            color: rgb(250, 250, 250);
+            font-size: 2.5em;
+            border:2px solid rgb(117, 117, 117);
+            padding:8px;
+            border-radius:5px;
+            box-shadow: -10px 0px 35px 12px rgba(0, 0, 0, 0.228);
+
+        }
+    }
+}
+
+/*VENTAJAS ANIMACION*/
+.ventajasAnimacion{
+    padding:20px;
+    margin:0 auto;
+    width: 80%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    h3{
+        text-align: center;
+    }
+    .columnaVentajas{
+        
+        width: 50%;
+        padding: 10px;
+        margin-bottom: 10px;
+        align-items: center;
+        
+    }
+    p{
+        margin: 10px;
+        text-align: justify;
+    }
+}
+
+/*productos Destacados*/
+.productosDestacados{
+    .galeriaDestacados{
+        padding:20px;
+        margin:0 auto;
+        width: 90%;
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+        .tarjetaDestacados{
+            text-align: center;
+         /*   border: 1px solid rgb(67, 67, 67);*/
+            padding: 10px;
+            margin-bottom: 10px;
+            box-shadow: -10px 0px 35px 12px rgba(0, 0, 0, 0.198);
+            border-radius: 5px;
+           
+            img{
+                width: 200px;
+            }
+
+            a{
+                display:inline-block;
+                margin-top:10px;
+                text-decoration: none;
+                color:white;
+                background-color: green;
+                font-size: 1em;
+                border:2px solid black;
+                padding:8px;
+                border-radius:5px;
+                /* box-shadow: -10px 0px 35px 12px rgba(0, 0, 0, 0.228); */
+    
+            }
+
+            .videoGaleria{
+                width: 90%;
+            }
+
+            
+        }
+    }
+    p{
+        text-align: center;
+        margin: 10px;
+    }
+   
+  
+}
+
+/* PRINCIPALES CLIENTES */
+.clientes{
+    
+
+    p{
+        text-align: center;
+        margin: 10px;
+    }
+}
+.marcasClientes{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+
+    img{
+        width: 150px;
+        height: 150px;
+        margin: 0 20px;
+    }
+    
+}
+
+/* QUIENES SOMOS */
+#quien_soy{
+    padding:20px;
+    margin:0 auto;
+    width: 80%;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    p{
+        margin: 10px;
+        text-align: justify;
+    }
+    h2{
+        justify-content: center;
+    }
+}
+
+
+
+
+/*FOOTER*/
+.footer{
+    /* background-image: radial-gradient(circle, #e592a2, #e59caa, #e5a6b2, #e5afba, #e5b9c2, #e5b9c2, #e5b9c2, #e5b9c2, #e5afba, #e5a6b2, #e59caa, #e592a2); */
+    background-color: black;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .logo{
+        width: 200px;
+    }
+    .navFooter{
+        display: inline-block;
+    }
+
+    .navFooterColumn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    ul{
+        list-style: none;
+        flex-direction: column;
+        li{
+            /* display: inline-block; */
+            margin-right: 15px;
+            a{
+                text-decoration: none;
+                color:  #ffffff;
+                font-size: 1.6em;
+              
+            }
+                }
+        
+    }
+
+    .redesSociale{
+        flex-direction: column;
+        display: inline-block;
+        .fa-instagram, .fa-facebook, .fa-twitter{
+            /* display: inline-block; */
+            font-size: 3em;
+        }
+    }
+    
+    .fa-whatsapp{
+        font-size: 5em;
+        color:rgb(44, 181, 44);
+        position:fixed;
+        bottom: 20px;
+        right: 20px;
+       
+    }
+    p{
+        font-size: 1.5em;
+        color: #ffffff;
+      
+    }
+    .addressFooter{
+        color: #ffffff;
+    }
+
+}
+
+.tituloContacto{
+    
+    margin: 20px auto;
+    text-align: center;
+}
+
+.sectionContacto{
+    padding:20px;
+    margin:0 auto;
+    width: 80%;
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    
+    
+    .columnaContacto{
+        
+        padding: 0px 20px;
+
+        
+    }
+}
+
+.asesoramiento{
+    text-align: center;
+    
+    p{
+        margin: 10px 0;
+    }
+
+}
